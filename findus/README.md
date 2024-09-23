@@ -1,5 +1,4 @@
 # findus
-![findus_poster](https://github.com/user-attachments/assets/21f7f714-ec38-4cf9-9b6f-4ffec3992708)
 
 ## 프로젝트 개요
 
