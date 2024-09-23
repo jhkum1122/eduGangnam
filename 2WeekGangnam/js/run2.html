@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./main.js"></script>
+
+</head>
+<body>
+  <div class="box">
+
+  <button id = "red">Red</button>
+  <button id = "green">Green</button>
+  <button id = "blue">Blue</button>
+
+
+  <script>
+
+    window.onload = function() {
+      // 페이지가 완전히 로드된 후 실행될 코드
+      // body 요소의 값을 읽어오는 예시
+      let bodyContent = document.body.innerHTML;
+      console.log('Body 내용:', bodyContent);
+    };
+
+    let body = document.querySelector('body');
+    document.querySelector('#red').addEventListener('click', function(){
+      body.style.backgroundColor = 'red';
+    });
+    document.querySelector('#green').addEventListener('click', function(){
+      body.style.backgroundColor = 'green';
+    });
+    document.querySelector('#blue').addEventListener('click', function(){
+      body.style.backgroundColor = 'blue';
+    });
+  </script>
+</body>
+</html>

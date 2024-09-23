@@ -1,0 +1,181 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+/* 20240617 start */
+header{
+  position: fixed;
+  right: 1;
+  left: 1;
+}
+aside{
+  position: fixed;
+  right: 1;
+}
+/* 20240617 end */
+.container {
+  position: sticky;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  /* position: sticky; */
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  margin-right: 20px;
+}
+
+header .search-form {
+  display: inline-block;
+}
+
+header .search-form input[type="text"] {
+  padding: 8px;
+  width: 200px;
+}
+
+header .search-form button {
+  padding: 8px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.sidebar {
+  /* position: fixed; */
+
+  flex: 0 0 20%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 10px;
+}
+
+.sidebar-menu li a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.video-stream {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+.video-player {
+  flex: 0 0 60%;
+  margin-right: 20px;
+}
+
+.video-player iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.video-player h2 {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.video-player p {
+  color: #666;
+}
+
+.recommended-videos {
+  flex: 0 0 30%;
+}
+
+.video-thumbnail {
+  margin-bottom: 20px;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.video-thumbnail h3 {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+footer nav ul {
+  list-style-type: none;
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}

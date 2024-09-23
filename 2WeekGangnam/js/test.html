@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input 동적 숨기기 예제</title>
+</head>
+<body>
+    <input type="text" id="myInput" value="숨길 내용">
+    <button id="toggleButton">숨기기/나타내기</button>
+
+    <script>
+        // JavaScript로 버튼 클릭 시 input 요소 숨기기/나타내기
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButton = document.getElementById('toggleButton');
+            const myInput = document.getElementById('myInput');
+
+            toggleButton.addEventListener('click', function() {
+                // input 요소의 현재 상태를 확인하여 토글
+                if (myInput.style.display === 'none') {
+                    myInput.style.display = 'block'; // 나타내기
+                } else {
+                    myInput.style.display = 'none'; // 숨기기
+                }
+            });
+        });
+    </script>
+</body>
+</html>

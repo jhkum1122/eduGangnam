@@ -1,0 +1,296 @@
+/* 전체 폰트를 Roboto로 설정하고, 기본 마진과 패딩을 제거 */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 헤더 스타일링 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* 시작 부분 스타일링 */
+.start {
+  display: flex;
+  align-items: center;
+}
+
+/* 햄버거 메뉴 스타일링 */
+.hamburger-menu {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-image: url("../icons/hamburger-menu.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+}
+
+/* 유튜브 로고 스타일링 */
+.youtube-logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+/* 중앙 검색창 스타일링 */
+.mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* 검색창 컨테이너 스타일링 */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  max-width: 600px;
+  width: 100%;
+  gap: 5px;
+
+  background-color: #f9f9f9;
+  border: 1px solid #c8c8c8;
+  border-radius: 18px;
+  padding: 2px 10px;
+}
+
+.search input {
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  border-radius: 18px 0 0 18px;
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 600px;
+  background-color: transparent;
+}
+
+/* 검색 및 음성 검색 아이콘 스타일링 */
+.search-icon {
+  width: 35px;
+  cursor: pointer;
+}
+
+.voice-search-icon {
+  /* width: 35px;
+    cursor: pointer; */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.search-divider {
+  height: 35px;
+  width: 1px;
+  background-color: #c8c8c8;
+}
+
+/* 오른쪽 아이콘 컨테이너 스타일링 */
+.end_icons {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 각 아이콘 스타일링 */
+.end_icons img {
+  width: 35px;
+  cursor: pointer;
+}
+
+/* 메인 컨테이너 스타일링 */
+.container {
+  display: flex;
+  margin-top: 60px;
+}
+
+/* 사이드 메뉴 컨테이너 스타일링 */
+.sidemenu-container {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 200px;
+  height: calc(100% - 60px);
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+/* 사이드 메뉴 리스트 스타일링 */
+.sidemenu-item {
+  list-style: none;
+  padding: 8px;
+  margin: 0;
+}
+
+/* 사이드 메뉴 각 항목 스타일링 */
+.sidemenu-item li {
+  padding: 12px;
+}
+
+/* 사이드 메뉴 항목 호버 시 배경색 변경 */
+.sidemenu-item li:hover {
+  background-color: #eee;
+}
+
+/* 사이드 메뉴 링크 스타일링 */
+.sidemenu-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+/* 사이드 메뉴 아이콘 스타일링 */
+.sidemenu-item .material-icons {
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.sidemenu-item span {
+  font-size: 14px;
+  flex-grow: 1;
+  display: inline-block;
+}
+
+/* 메인 영역 스타일링 */
+main {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+/* 비디오 컨테이너 스타일링 */
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* 각 비디오 아이템 스타일링 */
+.video-item {
+  display: flex;
+  flex-direction: column;
+  width: calc(33.333% - 20px);
+  cursor: pointer;
+}
+
+.video-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 비디오 썸네일 스타일링 */
+.thumbnail {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* 비디오 정보 스타일링 */
+.video-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* 사용자 아이콘 스타일링 */
+.video-info img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+
+/* 비디오 정보 세부 스타일링 */
+.video-info-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 비디오 제목 스타일링 */
+.video-info-detail h1 {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* 비디오 정보 텍스트 스타일링 */
+.video-info-detail p {
+  font-size: 14px;
+  color: #606060;
+  margin: 5px 0 0 0;
+}
+
+/* 반응형 디자인: 화면 너비에 따라 레이아웃 조정 */
+@media (max-width: 1312px) {
+  .sidemenu-container {
+    width: auto;
+  }
+
+  .sidemenu-item a {
+    flex-direction: column;
+    align-items: flex;
+    padding: 0;
+  }
+
+  .sidemenu-item .material-icons {
+    margin: 0;
+  }
+
+  .sidemenu-item span {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  main {
+    margin-left: 100px;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 1099px) {
+  .video-item {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 791px) {
+  .sidemenu-container {
+    display: none;
+  }
+
+  main {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .video-item {
+    width: calc(100% - 20px);
+  }
+}

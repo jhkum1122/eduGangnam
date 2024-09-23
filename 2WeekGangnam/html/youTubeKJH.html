@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Clone Sidebar</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- 헤더 섹션 -->
+  <header>
+    <nav class="header">
+      <div class="start">
+        <div class="hamburger-menu" role="button"></div> <!-- 햄버거 메뉴 아이콘 -->
+        <img class="youtube-logo" src="../icons/youtube-logo.svg" role="button" alt="YouTube Logo" /> <!-- 유튜브 로고 -->
+      </div>
+      <div class="mid">
+        <!-- 검색창 -->
+        <div class="search">
+          <input type="text" placeholder="검색" aria-label="Search" />
+          <div class="search-divider"></div>
+          <img class="search-icon" src="../icons/search.svg" role="button" alt="Search Icon" /> <!-- 검색 아이콘 -->
+        </div>
+          <img class="voice-search-icon" src="../icons/voice-search-icon.svg" role="button" alt="Voice Search Icon" />
+          <!-- 음성 검색 아이콘 -->
+      </div>
+      <div class="end">
+        <ul class="end_icons">
+          <!-- 오른쪽 아이콘들 -->
+          <li class="upload_icon">
+            <img class="upload_icon" src="../icons/upload.svg" role="button" alt="upload" />
+          </li>
+          <li class="apps_icon">
+            <img class="apps_icon" src="../icons/youtube-apps.svg" role="button" alt="apps_icon" />
+          </li>
+          <li class="notification_icon">
+            <img class="notification_icon" src="../icons/notifications.svg" role="button" alt="notifications" />
+          </li>
+          <li class="user_icon">
+            <img class="user_icon" src="../channel-pictures/my-channel.jpeg" role="button" alt="user" />
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 메인 컨테이너 -->
+  <div class="container">
+
+    <!-- 사이드 메뉴 -->
+    <aside class="sidemenu-container">
+      <ul class="sidemenu-item">
+        <li>
+          <a href="https://www.youtube.com/">
+            <span class="material-icons">home</span>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/">
+            <span class="material-icons">explore</span>
+            <span>Explore</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/feed/subscriptions">
+            <span class="material-icons">subscriptions</span>
+            <span>Subscriptions</span>
+          </a>
+        </li>
+        <li>
+          <a href="#https://www.youtube.com/">
+            <span class="material-icons">video_library</span>
+            <span>Originals</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/">
+            <span class="material-icons">library_music</span>
+            <span>YouTube Music</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/feed/you">
+            <span class="material-icons">library_books</span>
+            <span>Library</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+
+    <!-- 메인 콘텐츠 영역 -->
+    <main>
+      <div class="video-container">
+        <!-- Example Video Items -->
+        <div class="video-item">
+          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+            <img class="thumbnail" src="../thumbnails/thumbnail-1.webp" alt="Video Thumbnail" />
+            <div class="video-info">
+              <a href="https://www.youtube.com/@mkbhd">
+                <img src="./channel-pictures/channel-1.jpeg" alt="Channel Image" />
+              </a>
+              <div class="video-info-detail">
+                <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                  <h1>Talking Tech and AI with Google CEO Sundar Pichai!</h1>
+                </a>
+                <a href="https://www.youtube.com/@mkbhd">
+                  <p>Marques Brownlee</p>
+                </a>
+                <p>• 3.4M views • 6 months ago</p>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="video-item">
+          <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+            <img class="thumbnail" src="../thumbnails/thumbnail-2.webp" alt="Video Thumbnail" />
+            <div class="video-info">
+              <a href="https://www.youtube.com/@markiplier">
+                <img src="./channel-pictures/channel-2.jpeg" alt="Channel Image" />
+              </a>
+              <div class="video-info-detail">
+                <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                  <h1>Try Not To Laugh Challenge #9</h1>
+                </a>
+                <a href="https://www.youtube.com/@markiplier">
+                  <p>Markiplier</p>
+                </a>
+                <p>19M views • 4 years ago</p>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="video-item">
+          <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+            <img class="thumbnail" src="../thumbnails/thumbnail-3.webp" alt="Video Thumbnail" />
+            <div class="video-info">
+              <a href="https://www.youtube.com/@SSSniperWolf">
+                <img src="./channel-pictures/channel-3.jpeg" alt="Channel Image" />
+              </a>
+              <div class="video-info-detail">
+                <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                  <h1>Crazy Tik Toks Taken Moments Before DISASTER</h1>
+                </a>
+                <a href="https://www.youtube.com/@SSSniperWolf">
+                  <p>SSSniperWolf</p>
+                </a>
+                <p>12M views • 1 year ago</p>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="video-item">
+          <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+            <img class="thumbnail" src="../thumbnails/thumbnail-4.webp" alt="Video Thumbnail" />
+            <div class="video-info">
+              <a href="https://www.youtube.com/@veritasium">
+                <img src="./channel-pictures/channel-4.jpeg" alt="Channel Image" />
+              </a>
+              <div class="video-info-detail">
+                <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                  <h1>The Simplest Math Problem No One Can Solve - Collatz Conjecture</h1>
+                </a>
+                <a href="https://www.youtube.com/@veritasium">
+                  <p>Veritasium</p>
+                </a>
+                <p>18M views • 4 months ago</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="video-item">
+          <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+            <img class="thumbnail" src="../thumbnails/thumbnail-5.webp" alt="Video Thumbnail" />
+            <div class="video-info">
+              <a href="https://www.youtube.com/@CSDojo">
+                <img src="./channel-pictures/channel-5.jpeg" alt="Channel Image" />
+              </a>
+              <div class="video-info-detail">
+                <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+                  <h1>Kadane's Algorithm to Maximum Sum Subarray Problem</h1>
+                </a>
+                <a href="https://www.youtube.com/@CSDojo">
+                  <p>CS Dojo</p>
+                </a>
+                <p>519K views • 5 years ago</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="video-item">
+          <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+            <img class="thumbnail" src="../thumbnails/thumbnail-6.webp" alt="Video Thumbnail" />
+            <div class="video-info">
+              <a href="https://www.youtube.com/@MrBeast">
+                <img src="./channel-pictures/channel-6.jpeg" alt="Channel Image" />
+              </a>
+              <div class="video-info-detail">
+                <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                  <h1>Anything You Can Fit In The Circle I'll Pay For</h1>
+                </a>
+                <a href="https://www.youtube.com/@MrBeast">
+                  <p>MrBeast</p>
+                </a>
+                <p>141M views • 1 year ago</p>
+              </div>
+          </a>
+        </div>
+      </div>
+  </div>
+  </main>
+  </div>
+</body>
+</html>

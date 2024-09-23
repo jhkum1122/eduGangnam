@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./main.js"></script>
+  <script>
+    navigator.geolocation.getCurrentPosition(
+      function(position){
+        document.write(position.coords.latitude + ', '+ position.coords.longitude)
+    });//navigator = browser지원함
+  </script>
+
+</head>
+<body>
+  
+
+</body>
+</html>

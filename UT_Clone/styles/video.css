@@ -1,0 +1,26 @@
+.thumbNail{
+  width: 300px;
+
+}
+.video-preview{
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.video-title{
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  
+  margin-bottom: 12px;
+}
+
+.video-author, .video-stats{
+  font-size: 12px;
+  columns: rgb(96, 96, 96);
+  
+  margin-bottom: 4px;
+}

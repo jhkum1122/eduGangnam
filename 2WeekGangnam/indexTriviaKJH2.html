@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="stylesTrivia.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+    </head>
+<!-- //2번 정답 -->
+    <style>
+        #result{
+            display: none;
+        }
+    </style>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <div class="quest1">
+                    금붕어를 한마리만 키우면 불법인 나라는?
+                    <br>
+                    <button id = "redS" value="red">Red</button>
+                    <button id = "greenS" value="green">Green</button>
+                    <button id = "blueS" value="blue">Blue</button>
+                </div>
+                <!-- TODO: Add 객관식 퀴즈 질문 here -->
+                 <div id ="q1Answer">
+
+                 </div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <form class="quest2" onsubmit="checkAnswer()"; return false;>
+                    우리나라를 상징하는 동물은?<br>
+                    <input type="text" id="q2Answer">
+                    <button type="submit">정답
+                </form>
+                <br>
+<!-- 2번 정답 -->
+                <input id="result" type="text" style="width: 200px;">
+
+                <!-- TODO: Add 자유 응답 질문 here -->
+            </div>
+        </div>
+        <script>
+            // TODO: Add JavaScript code to check answers to questions
+
+//            let body = document.querySelector('body');
+/*
+            document.querySelector('#greenS').addEventListener('click', function(){
+                body.style.backgroundColor = 'green';
+            });
+            document.querySelector('#blueS').addEventListener('click', function(){
+                body.style.backgroundColor = 'blue';
+            });
+*/
+
+//1번 정답
+    document.addEventListener('DOMContentLoaded', function() {
+    // 여기에 버튼 클릭 이벤트 설정 코드를 넣습니다.
+    let reds = document.getElementById('redS');
+    let greens = document.getElementById('greenS');
+    let blues = document.getElementById('blueS');
+
+    let q1Answer = document.getElementById('q1Answer');
+
+    if (reds || greens || blues) {
+        reds.addEventListener('click', function() {
+            // 클릭 이벤트 핸들러 내용
+            console.log('red 버튼이 클릭되었습니다!');
+            reds.style.backgroundColor = 'red';            
+            q1Answer.textContent = '정답입니다.';
+        });
+        greens.addEventListener('click', function() {
+            // 클릭 이벤트 핸들러 내용
+            console.log('green버튼이 클릭되었습니다!');
+            greens.style.backgroundColor = 'green';
+            q1Answer.textContent = '오답입니다.';
+        });
+        blues.addEventListener('click', function() {
+            // 클릭 이벤트 핸들러 내용
+            console.log('blue버튼이 클릭되었습니다!');
+            blues.style.backgroundColor = 'blue';
+            q1Answer.textContent = '오답입니다.';
+        });
+    } else {
+        console.error('ID가 없습니다.');
+    }
+});
+    //2번 정답
+    function checkAnswer(){
+      event.preventDefault(); // 폼 제출 기본 동작(페이지 새로고침)을 막음
+      let name = document.querySelector('#q2Answer').value;
+
+      if(name == '호랑이'){
+        result.value = '정답이 맞습니다';
+      }else{    //호랑이가 아닌 답이 나오면
+        result.value = '오답입니다.';
+      }
+      result.style.display = 'block'; // 나타내기
+      
+    }
+
+
+        </script>
+    </body>
+</html>
